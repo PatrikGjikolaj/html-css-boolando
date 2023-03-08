@@ -10,6 +10,7 @@ nav{
     height: 60px;
     position: fixed;
     display: flex;
+    z-index: 100;
 }
 .set{
     width: 75%;
@@ -40,16 +41,14 @@ nav{
     display: flex;
     margin: 100px auto 0px;
     flex-direction: column;
+    position: relative;
 }
 .imgArticoli{
     width: 100%;
 }
 .noneArticoli{
     position: absolute;
-    left: 0px;
-    top: 0px;
     z-index: -1;
-    display: none;
 }
 .redText{
     color: red;
@@ -65,4 +64,31 @@ nav{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+.dimImg:hover .imgArticoli{
+    z-index: -2;
+}
+.disIcon{
+    position: absolute;
+    top: 80%;
+    background-color: red;
+    color: white;
+}
+.green{
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    background-color: green;
+    color: white;
+}
+.heart{
+    position: absolute;
+    left: 90%;
+    top: 5%;
+}
+.heart:hover{
+    color: red;
+}
+a:hover{
+    color: blue;
 }

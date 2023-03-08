@@ -4,3 +4,23 @@
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+nav{
+    background-color: #ff6900;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+}
+.whiteText{
+    text-decoration: none;
+    color: white;
+}
+.navPart{
+    width: 25%;
+    text-align: center;
+}
+#logo{
+    height: 30px;
+}
